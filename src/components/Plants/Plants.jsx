@@ -2,9 +2,7 @@ import { Typography, Box } from '@mui/material';
 import MuiBox from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import MuiTab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { useState } from 'react';
 import CardPlant from './CardPlant'
 

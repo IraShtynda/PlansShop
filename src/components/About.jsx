@@ -7,7 +7,6 @@ import { styled } from '@mui/material/styles';
 import { Colors } from '../styles/index'
 
 const AboutWrapper = styled(MuiBox)(() => ({
-    position: 'relative',
     padding: '90px 0 0',
     backgroundColor: `${Colors.body_bg}`,
 }))

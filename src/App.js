@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Banner from './components/Banner';
 import About from './components/About';
 import Plants from './components/Plants/Plants'
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Banner />
         <About />
         <Plants />
+        <FAQ />
       </ThemeProvider>
     </>
   );

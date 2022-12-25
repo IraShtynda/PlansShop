@@ -1,4 +1,12 @@
-import { List, ListItemText, Typography, ListItemButton } from '@mui/material';
+import { List, ListItemText, Typography } from '@mui/material';
+import MuiListItemButton from '@mui/material/ListItemButton';
+import { styled } from '@mui/material/styles';
+
+const ListItemButton = styled(MuiListItemButton)(() => ({
+    '&:hover': {
+        backgroundColor: 'transparent'
+    },
+}))
 
 const HeaderMenu = () => {
     return (
