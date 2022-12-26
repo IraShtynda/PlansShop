@@ -8,7 +8,7 @@ import { Colors } from '../styles/index'
 
 const AboutWrapper = styled(MuiBox)(() => ({
     padding: '90px 0 0',
-    backgroundColor: `${Colors.body_bg}`,
+    background: `${Colors.body_bg}`,
 }))
 
 const List = styled(MuiList)(() => ({
@@ -24,7 +24,7 @@ const CircleIcon = styled(FiberManualRecordIcon)(() => ({
 
 const About = () => {
     return (
-        <AboutWrapper xs={{ backgroundColor: 'inherit' }}>
+        <AboutWrapper xs={{ background: 'inherit' }} id='about'>
             <Container>
                 <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
@@ -42,7 +42,6 @@ const About = () => {
                     </Grid>
                 </Grid>
             </Container>
-            <img src="https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8acf67e2944002137609b_optimized_1920.webp" alt='Illustration' style={{ display: 'block', width: '100%' }}></img>
         </AboutWrapper>
     )
 }

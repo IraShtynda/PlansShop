@@ -6,13 +6,12 @@ import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { useState } from 'react';
 import CardPlant from './CardPlant'
 
-const PlantsWrapper = styled(MuiBox)(() => ({
-    position: 'relative',
-    marginTop: '-90px'
-}))
-
 const TextWrapper = styled(MuiBox)(() => ({
     textAlign: 'center',
+    marginTop: '-150px',
+    [`@media screen and (max-width: 900px)`]: {
+        marginTop: 0
+    },
 }))
 
 const Plants = () => {
@@ -23,7 +22,8 @@ const Plants = () => {
     };
 
     return (
-        <PlantsWrapper>
+        <Box id="plants">
+            <img src="https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8acf67e2944002137609b_optimized_1920.webp" alt='Illustration' style={{ display: 'block', width: '100%' }}></img>
             <TextWrapper>
                 <Typography variant='h2'>―WHAT WE OFFER―</Typography>
                 <Typography variant='h3'>Our Plants</Typography>
@@ -38,7 +38,7 @@ const Plants = () => {
                             <MuiTab label="OUTDOOR" value="2" />
                         </TabList>
                     </Box>
-                    <TabPanel value="1" sx={{ display: 'grid', gridTemplateColumns: { lg: '1fr 1fr 1fr 1fr', md: '1fr 1fr', xs: '1fr' }, gap: '30px', marginTop: '20px' }}>
+                    <TabPanel value="1" sx={{ display: 'grid', gridTemplateColumns: { lg: '1fr 1fr 1fr 1fr', md: '1fr 1fr', xs: '1fr' }, gap: '20px', marginTop: '20px' }}>
                         <CardPlant src="https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8c0347e2944002137b5ec_optimized_1396?nowebp"
                             title='Small Ornamental Plants'
                             description="Such plants will fit on any windowsill, decorate your home or work table. Chlorophytum, money plants, aglaonema are not demanding in care but very beautiful." />
@@ -52,7 +52,7 @@ const Plants = () => {
                             title='Big Ornamental Plants'
                             description="Charming pachypodium, yucca, monstera will become a stunning decoration of your room or office. These plants will make a great impression on your guests." />
                     </TabPanel>
-                    <TabPanel value="2" sx={{ display: 'grid', gridTemplateColumns: { lg: '1fr 1fr 1fr 1fr', md: '1fr 1fr', xs: '1fr' }, gap: '30px', marginTop: '-48px' }}>
+                    <TabPanel value="2" sx={{ display: 'grid', gridTemplateColumns: { lg: '1fr 1fr 1fr 1fr', md: '1fr 1fr', xs: '1fr' }, gap: '20px', marginTop: '-48px' }}>
                         <CardPlant src="https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8c1dd836b3b00220597b6_optimized_1500_c1500x750-0x0?nowebp"
                             title='Outdoor Flowers'
                             description="Flowers form the basis of the exterior and are the first to catch the eye. Charming anemones, freesia, lilies will provide brightness and a pleasant aroma. Choose your outdoor flower!" />
@@ -68,7 +68,7 @@ const Plants = () => {
                     </TabPanel>
                 </TabContext>
             </Box>
-        </PlantsWrapper>
+        </Box>
     )
 }
 

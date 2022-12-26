@@ -1,4 +1,4 @@
-import { Box, Drawer, Button, List, ListItemText, Typography } from '@mui/material';
+import { Box, Drawer, Button, List, ListItemText, Typography, Link } from '@mui/material';
 import MuiListItemButton from '@mui/material/ListItemButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
@@ -25,9 +25,9 @@ const SidebarMenu = function TemporaryDrawer() {
     const list = (anchor) => (
         <Box
             onKeyDown={toggleDrawer(anchor, false)}
-            sx={{ backgroundColor: `${Colors.secondary}`, height: '100%' }}
+            sx={{ background: `${Colors.secondary}`, height: '100%' }}
         >
-            <List sx={{ margin: '20px', color: `${Colors.primary}`, width: '300px', flexDirection: 'column' }} onClick={toggleDrawer(anchor, true)} ><ListItemButton>
+            <List sx={{ margin: '20px', color: `${Colors.primary}`, width: '250px', flexDirection: 'column' }} onClick={toggleDrawer(anchor, true)} ><ListItemButton component={Link} to="#about">
                 <ListItemText><Typography variant='menuItemMobile'>About us</Typography></ListItemText>
             </ListItemButton>
                 <ListItemButton>

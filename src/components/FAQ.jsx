@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 
 const FAQWrapper = styled(MuiBox)(() => ({
-    padding: '60px 0',
+    paddingTop: '60px',
 }))
 
 const Accordion = styled(MuiAccordion)(() => ({
@@ -27,7 +27,7 @@ const FAQ = () => {
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={7}>
-                        <img src='https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed7a9e30343780021013cf4_optimized_908_e1000x819-48x75?nowebp' alt='Illustration' style={{ display: 'block', width: '100%', margin: '0 0 0 -40px', }}></img>
+                        <img src='https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed7a9e30343780021013cf4_optimized_908_e1000x819-48x75?nowebp' alt='Illustration' style={{ display: 'block', width: '100%' }}></img>
                     </Grid>
                     <Grid item xs={12} md={5} sx={{ marginTop: '30px' }}>
                         <Typography variant='h2'>―FAQ―</Typography>

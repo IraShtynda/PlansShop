@@ -7,6 +7,7 @@ export const Colors = {
     gray: "#707070",
     body_bg: "#FAF5F2",
     black: "#000000",
+    yellow: "#ecd2a0",
 };
 
 const overrides = {
@@ -26,20 +27,20 @@ const overrides = {
             fontFamily: 'Source Sans Pro',
             color: Colors.black,
             fontWeight: 400,
-            fontSize: "18px",
+            fontSize: "20px",
             '&:hover': {
                 color: Colors.accent,
             },
             padding: 0,
-            margin: '15px 20px',
+            margin: '15px',
             overflowWrap: 'break-word',
             whiteSpace: 'nowrap',
         },
         menuItemMobile: {
             fontFamily: 'Source Sans Pro',
-            color: Colors.white,
+            color: Colors.primary,
             fontWeight: 400,
-            fontSize: "18px",
+            fontSize: "19px",
             '&:hover': {
                 color: Colors.accent,
             },
@@ -48,7 +49,7 @@ const overrides = {
             fontFamily: 'Source Sans Pro',
             color: Colors.accent,
             fontWeight: 700,
-            fontSize: "14px",
+            fontSize: "16px",
             letterSpacing: '2.8px',
             marginBottom: '20px',
         },
@@ -60,7 +61,7 @@ const overrides = {
             [`@media screen and (max-width: 900px)`]: {
                 fontSize: "64px"
             },
-            [`@media screen and (max-width: 768px)`]: {
+            [`@media screen and (max-width: 600px)`]: {
                 fontSize: "48px"
             },
             marginBottom: '20px',
@@ -73,7 +74,7 @@ const overrides = {
             [`@media screen and (max-width: 900px)`]: {
                 fontSize: "38px"
             },
-            [`@media screen and (max-width: 768px)`]: {
+            [`@media screen and (max-width: 600px)`]: {
                 fontSize: "34px"
             },
             marginBottom: '20px',
@@ -92,7 +93,7 @@ const overrides = {
         },
         p: {
             fontFamily: 'Source Sans Pro',
-            fontSize: "17px",
+            fontSize: "18px",
             color: Colors.gray,
         },
         aboutListItem: {
@@ -101,23 +102,57 @@ const overrides = {
             fontWeight: 400,
             fontSize: "15px",
         },
+        h6: {
+            fontFamily: 'Source Sans Pro',
+            color: Colors.accent,
+            fontWeight: 700,
+            fontSize: "18px",
+        },
+        count: {
+            fontFamily: 'Lora',
+            color: Colors.yellow,
+            fontWeight: 700,
+            fontSize: "74px",
+            [`@media screen and (max-width: 900px)`]: {
+                fontSize: "65px"
+            },
+            [`@media screen and (max-width: 600px)`]: {
+                fontSize: "48px"
+            },
+        },
+        countTitle: {
+            fontFamily: 'Source Sans Pro',
+            color: Colors.primary,
+            fontWeight: 700,
+            fontSize: "16px",
+            letterSpacing: '2.8px',
+        },
+        footerMenuItem: {
+            fontFamily: 'Source Sans Pro',
+            color: Colors.primary,
+            fontWeight: 400,
+            fontSize: "20px",
+            '&:hover': {
+                color: Colors.accent,
+            },
+            padding: 0,
+            overflowWrap: 'break-word',
+            whiteSpace: 'nowrap',
+        },
     },
     components: {
         MuiButton: {
             defaultProps: {
-                backgroundColor: 'transparent',
-                '&:hover': {
-                    backgroundColor: 'transparent',
-                },
+                background: 'transparent',
             },
             variants:
                 [
                     {
                         props: { variant: 'primary' },
                         style: {
-                            backgroundColor: Colors.accent,
+                            background: Colors.accent,
                             '&:hover': {
-                                backgroundColor: Colors.secondary,
+                                background: Colors.secondary,
                             },
                             color: Colors.primary,
                             borderRadius: '26px',
@@ -129,9 +164,9 @@ const overrides = {
                     {
                         props: { variant: 'secondary' },
                         style: {
-                            backgroundColor: 'transparent',
+                            background: 'transparent',
                             '&:hover': {
-                                backgroundColor: Colors.black,
+                                background: Colors.black,
                                 color: Colors.primary,
                             },
                             color: Colors.black,
@@ -140,6 +175,40 @@ const overrides = {
                             fontWeight: 700,
                             fontSize: '12px',
                             padding: '14px 40px',
+                        }
+                    },
+                    {
+                        props: { variant: 'primaryOrder' },
+                        style: {
+                            background: Colors.accent,
+                            '&:hover': {
+                                background: Colors.secondary,
+                            },
+                            color: Colors.primary,
+                            borderRadius: '17px',
+                            fontWeight: 700,
+                            fontSize: '10px',
+                            lineHeight: '10px',
+                            padding: '12px 30px',
+                            marginBottom: '20px',
+                            marginTop: '10px'
+                        }
+                    },
+                    {
+                        props: { variant: 'submit' },
+                        style: {
+                            background: Colors.accent,
+                            '&:hover': {
+                                background: Colors.secondary,
+                            },
+                            color: Colors.primary,
+                            borderRadius: '26px',
+                            fontWeight: 700,
+                            fontSize: '12px',
+                            paddingTop: '15px',
+                            paddingBottom: '15px',
+                            width: '100%',
+                            marginTop: '20px',
                         }
                     }
                 ]

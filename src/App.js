@@ -5,6 +5,11 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Plants from './components/Plants/Plants'
 import FAQ from './components/FAQ';
+import Bestsellers from './components/Bestsellers/Bestsellers';
+import Statistics from './components/Statistics';
+import Pricing from './components/Pricing/Pricing';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +20,11 @@ function App() {
         <About />
         <Plants />
         <FAQ />
+        <Bestsellers />
+        <Statistics />
+        <Pricing />
+        <Contacts />
+        <Footer />
       </ThemeProvider>
     </>
   );

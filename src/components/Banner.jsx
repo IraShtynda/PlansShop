@@ -4,8 +4,7 @@ import MuiButton from '@mui/material/Button';
 import { styled } from '@mui/material/styles'
 
 const BannerWrapper = styled(MuiBox)(() => ({
-    position: 'relative',
-    padding: '260px 0 130px',
+    padding: '240px 0 160px',
     backgroundImage: `url('//res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8be96bebfe6002207efc0_optimized_1920')`,
     backgroundSize: 'cover',
 }))
