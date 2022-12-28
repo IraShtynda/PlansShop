@@ -8,7 +8,7 @@ import CardPlant from './CardPlant'
 
 const TextWrapper = styled(MuiBox)(() => ({
     textAlign: 'center',
-    marginTop: '-150px',
+    marginTop: '-120px',
     [`@media screen and (max-width: 900px)`]: {
         marginTop: 0
     },
@@ -22,9 +22,8 @@ const Plants = () => {
     };
 
     return (
-        <Box id="plants">
-            <img src="https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8acf67e2944002137609b_optimized_1920.webp" alt='Illustration' style={{ display: 'block', width: '100%' }}></img>
-            <TextWrapper>
+        <Box>
+            <TextWrapper id="plants">
                 <Typography variant='h2'>―WHAT WE OFFER―</Typography>
                 <Typography variant='h3'>Our Plants</Typography>
                 <Typography variant='subtitle'>We sell both indoor and outdoor varieties of plants.</Typography>

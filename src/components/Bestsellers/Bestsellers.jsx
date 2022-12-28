@@ -6,7 +6,7 @@ import { DesktopCarousel, TabletCarousel, MobileCarousel } from './Carousels'
 
 const TextWrapper = styled(MuiBox)(() => ({
     textAlign: 'center',
-    padding: '90px 24px 0 24px',
+    padding: '60px 24px 0 24px',
 }))
 
 const CarouselWrapper = styled(MuiBox)(() => ({

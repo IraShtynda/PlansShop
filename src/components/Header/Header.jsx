@@ -7,7 +7,7 @@ const Header = () => {
     const isDesktop = useMediaQuery('(min-width:900px)');
 
     return (
-        <AppBar>
+        <AppBar position="relative">
             <Toolbar>
                 <Container sx={{
                     display: 'flex',

@@ -4,6 +4,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import MuiButton from '@mui/material/Button';
+import MuiLink from '@mui/material/Link';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 
@@ -27,7 +28,7 @@ const FAQ = () => {
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={7}>
-                        <img src='https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed7a9e30343780021013cf4_optimized_908_e1000x819-48x75?nowebp' alt='Illustration' style={{ display: 'block', width: '100%' }}></img>
+                        <img src='https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed7a9e30343780021013cf4_optimized_908_e1000x819-48x75?nowebp' alt='Illustration' width="100%"/>
                     </Grid>
                     <Grid item xs={12} md={5} sx={{ marginTop: '30px' }}>
                         <Typography variant='h2'>―FAQ―</Typography>
@@ -69,7 +70,7 @@ const FAQ = () => {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
-                        <MuiButton variant='primary' sx={{ marginTop: '20px' }}>CONTACT US</MuiButton>
+                        <MuiLink href="#contacts"><MuiButton variant='primary' sx={{ marginTop: '20px' }}>CONTACT US</MuiButton></MuiLink>
                     </Grid>
                 </Grid>
             </Container>

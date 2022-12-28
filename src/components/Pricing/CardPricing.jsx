@@ -1,5 +1,4 @@
-import { Typography, Card, CardActions, CardContent, Box } from '@mui/material';
-import MuiButton from '@mui/material/Button';
+import { Typography, Card, CardContent } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Colors } from '../../styles/index'
 
@@ -38,12 +37,6 @@ const CardPlant = ({ price, title, itemOne, itemTwo, itemThree }) => {
                     {itemThree}
                 </Typography>
             </CardContent>
-            <CardActions sx={{
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
-                <MuiButton variant='primaryOrder'>CUSTOM ORDER</MuiButton>
-            </CardActions>
         </CardWrapper>
     )
 }

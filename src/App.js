@@ -10,11 +10,13 @@ import Statistics from './components/Statistics';
 import Pricing from './components/Pricing/Pricing';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer';
+import Basket from './components/Basket'
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Basket/>
         <Header />
         <Banner />
         <About />

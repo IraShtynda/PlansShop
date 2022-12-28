@@ -1,6 +1,7 @@
 import { Container, Typography } from '@mui/material';
 import MuiBox from '@mui/material/Box';
 import MuiButton from '@mui/material/Button';
+import MuiLink from '@mui/material/Link';
 import { styled } from '@mui/material/styles'
 
 const BannerWrapper = styled(MuiBox)(() => ({
@@ -31,8 +32,8 @@ const Banner = () => {
                     <Typography variant='h1'>Make Your Home Green</Typography>
                     <Typography variant='subtitle'>Check out our store in New York with the best indoor & outdoor plants that are suitable for growing exactly in your conditions.</Typography>
                 </TextWrapper><ButtonWrapper>
-                    <MuiButton variant='primary'>BEST PLANTS</MuiButton>
-                    <MuiButton variant='secondary'>LEARN MORE</MuiButton>
+                    <MuiLink href="#bestsellers"><MuiButton variant='primary'>BEST PLANTS</MuiButton></MuiLink>
+                    <MuiLink href="#about"><MuiButton variant='secondary'>LEARN MORE</MuiButton></MuiLink>
                 </ButtonWrapper>
             </Container>
         </BannerWrapper>

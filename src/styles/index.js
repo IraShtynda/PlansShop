@@ -139,6 +139,12 @@ const overrides = {
             overflowWrap: 'break-word',
             whiteSpace: 'nowrap',
         },
+        basketText: {
+            fontFamily: 'Source Sans Pro',
+            color: Colors.black,
+            fontWeight: 700,
+            fontSize: "18px"
+        },
     },
     components: {
         MuiButton: {
@@ -210,6 +216,19 @@ const overrides = {
                             width: '100%',
                             marginTop: '20px',
                         }
+                    },
+                    {
+                        props: { variant: 'counter' },
+                        style: {
+                            background: Colors.primary,
+                            color: Colors.black,
+                            border: `1px solid ${Colors.black}`,
+                            fontWeight: 700,
+                            fontSize: '20px',
+                            lineHeight: '20px',
+                            padding: '1px',
+                            minWidth: '20px'
+                        }
                     }
                 ]
         },
@@ -227,6 +246,13 @@ const overrides = {
                         color: Colors.secondary,
                         opacity: 1
                     }
+                },
+            },
+        },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    textDecoration: 'none'
                 },
             },
         },

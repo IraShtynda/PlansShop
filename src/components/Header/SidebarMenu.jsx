@@ -12,7 +12,7 @@ const ListItemButton = styled(MuiListItemButton)(() => ({
 
 const SidebarMenu = function TemporaryDrawer() {
     const [state, setState] = useState({
-        left: false,
+        right: false,
     });
 
     const toggleDrawer = (anchor, open) => (event) => {
@@ -27,19 +27,19 @@ const SidebarMenu = function TemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
             sx={{ background: `${Colors.secondary}`, height: '100%' }}
         >
-            <List sx={{ margin: '20px', color: `${Colors.primary}`, width: '250px', flexDirection: 'column' }} onClick={toggleDrawer(anchor, true)} ><ListItemButton component={Link} to="#about">
+            <List sx={{ margin: '20px', color: `${Colors.primary}`, width: '250px', flexDirection: 'column' }} onClick={toggleDrawer(anchor, false)}> <ListItemButton component={Link} to="#about">
                 <ListItemText><Typography variant='menuItemMobile'>About us</Typography></ListItemText>
             </ListItemButton>
-                <ListItemButton>
+                <ListItemButton component={Link} to="#plants">
                     <ListItemText><Typography variant='menuItemMobile'>Plants</Typography></ListItemText>
                 </ListItemButton>
-                <ListItemButton>
+                <ListItemButton component={Link} to="#bestsellers">
                     <ListItemText><Typography variant='menuItemMobile'>Pick of the Month</Typography></ListItemText>
                 </ListItemButton>
-                <ListItemButton>
+                <ListItemButton component={Link} to="#pricing">
                     <ListItemText><Typography variant='menuItemMobile'>Pricing</Typography></ListItemText>
                 </ListItemButton>
-                <ListItemButton>
+                <ListItemButton component={Link} to="#contacts">
                     <ListItemText><Typography variant='menuItemMobile'>Contact us</Typography></ListItemText>
                 </ListItemButton>
             </List>
