@@ -69,7 +69,7 @@ const Basket = () => {
                 open={open}
                 onClose={handleClose}
             >
-                <CartWrapper>
+            <CartWrapper sx={{ overflowY: 'scroll' }}>
                     <Typography variant="h5">
                         Shopping cart
                     </Typography>
