@@ -67,9 +67,10 @@ const Basket = () => {
         </BasketWrapper>
             <Modal
                 open={open}
-                onClose={handleClose}
+            onClose={handleClose}
+            disableScrollLock={true}
             >
-            <CartWrapper sx={{ overflowY: 'scroll' }}>
+            <CartWrapper>
                     <Typography variant="h5">
                         Shopping cart
                     </Typography>
