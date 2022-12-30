@@ -68,7 +68,6 @@ const Basket = () => {
             <Modal
                 open={open}
             onClose={handleClose}
-            disableScrollLock={true}
             >
             <CartWrapper>
                     <Typography variant="h5">
